@@ -20,6 +20,7 @@ class Passport extends Model
         'status',
         'due',
         'total',
+        'type',
         'embassy_date',
         'delivery_date',
     ];
