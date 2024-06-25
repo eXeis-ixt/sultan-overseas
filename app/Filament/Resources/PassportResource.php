@@ -85,8 +85,11 @@ class PassportResource extends Resource
                            TextInput::make('due')
                            ->numeric()
                            ->required()
-                           ->default(0),
-                           TextInput::make('total')->label('Total cost of service')->numeric()->required()->default(0),
+                           ->default(0)
+                           ->prefix('TK')
+                           ->prefixIcon('heroicon-o-banknotes'),
+                           TextInput::make('total')->label('Total cost of service')->numeric()->required()->default(0)->prefix('TK')
+                           ->prefixIcon('heroicon-o-banknotes'),
                        ])->columns(2),
                     ]),
 
